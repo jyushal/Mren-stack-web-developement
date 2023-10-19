@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation ka Gyaan</title>
+   
+
+    <style>
+         *{
+        margin:0;
+        padding:0;
+        box-sizing: border-box;
+    }
+        .container{
+            width: 100wh;
+            height: 100vh;
+            background-color: beige;
+            border: 5px solid black;
+        }
+        .box1{
+            width: 350px;
+            height:80px;
+            background-color: blue;
+            border: 4px solid yellow;
+            border-radius: 10px;
+            margin: 10px;
+            position: relative;
+            /*animation-name: rightmovement;
+            animation-duration: 5s;
+            animation-iteration-count:1;
+            animation-delay: 1s;
+            animation-timing-function:linear;
+           animation-direction: alternate-reverse;
+           animation-fill-mode: forwards;*/
+
+           /* @keyframes duration | easing-function | delay |
+iteration-count | direction | fill-mode | play-state | name */
+         animation: 5s linear 1s infinite  alternate none running rightmovement ;
+        }
+
+
+        @keyframes rightmovement{
+            from{
+                top: 0;
+                left: 0;
+            }
+            to{
+                top: 0;
+                left:1100px;
+            }
+        }
+
+        #box2{
+
+            width: 350px;
+            height:80px;
+            background-color: blue;
+            border: 4px solid yellow;
+            border-radius: 10px;
+            margin: 10px;
+            position: relative;
+            animation: 5s ease-in 1s infinite  alternate none running leftmovement ;
+
+        }
+
+        @keyframes leftmovement{
+
+            from{
+                top: 460px;
+                left: 1100px;
+            }
+            to{
+                top: 460px;
+                left:0;
+            }
+           
+        }
+        
+               
+        #circle{
+                width: 80px;
+              height:80px;
+             background-color: blue;
+             border: 4px solid yellow;
+             border-radius: 50px;
+             margin: 10px;
+             position: relative;
+             top: 200px;
+             left:675px ;
+             animation: 10s ease-in-out 0s infinite  alternate-reverse none running circlemovement ;
+            }
+            @keyframes circlemovement{
+
+            0%{
+               top: 1%;
+               left: 5%;
+            }
+            30%{
+               top: 5%;
+               left: 90%;
+            }
+            60%{
+               top:50% ;
+               left: 10%;
+            }
+            100%{
+                 top: 65%;
+                 left: 30%;
+            }
+        } 
+
+        
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box1">
+
+        </div>
+       <div id="circle">
+
+            </div>
+         <div id="box2">
+
+            </div>
+
+        
+      
+        
+
+    </div>
+</body>
+</html>

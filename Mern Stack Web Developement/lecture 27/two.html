@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+*{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            width: 100vw;
+            height: 100vh;
+            background-color: #cdd6da;
+            background-image: linear-gradient(160deg, #10678d 0%, #464963 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .card{
+            width: 1000px;
+            height: 500px;
+            background-color: #4e094c;
+            display: flex;
+            position: relative;
+            overflow: hidden;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .card:hover::before{
+            left: 0%; /* Move the overlay to the right edge of the card */
+
+        }
+
+        .card::before{
+            content: "";
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            transition: left 5s ease;
+
+        }
+
+        .textbox{
+            width: 50%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 50px;
+            color: white;
+
+        }
+
+        .imgbox{
+            width: 50%;
+            height: 100%;
+            background-color: white;
+            background-image: url('images/icon.jpg');
+            background-size:center;
+            background-position:center;
+        }
+        #contentbox{
+            width: 75%;
+            margin: auto;
+            display: flex;
+            flex-direction:column; 
+            gap: 70px;
+            
+        }
+        h1{
+            font-size: 2.4rem;
+            
+
+        }
+
+        #descbox p{
+            font-size: 1.1rem;
+            
+
+        }
+        #statusbox{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            
+            
+        }
+        #number{
+            font-size: 1.7rem;
+            font-weight: bold;
+        }
+        #unit{
+            font-size: smaller;
+        }
+
+
+
+
+
+        
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+
+            <div class="textbox">
+
+                <div id="contactbox">
+                    <h1 id="textheading">
+                        Get insight that help your business grow
+
+                    </h1>
+
+                    <div id="descbox">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga animi iste voluptates rerum ad modi obcaecati odio optio impedit quos.</p>
+
+                    </div>
+                    <div id="statusbox">
+                        <div>
+                            <div id="number">
+                                10k+
+
+                            </div>
+                            <div id="unit">
+                                comments
+
+                            </div>
+                        </div>
+
+                        <div>
+                            <div id="number">
+                              214
+                            </div>
+                            <div id="unit">
+                              paid users
+                            </div>
+                        </div>
+
+                        <div>
+                            <div id="number">
+                            12M+
+                            </div>
+                            <div id="unit">
+                            views
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
+            <div class="imgbox">
+
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>

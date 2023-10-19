@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cards</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            height: 100vh;
+            width: 100vw;
+            min-height: 950px;
+            background-color: #0093E9;
+            background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .card{
+           width: 360px;
+           height: 540px;
+           background-color: white;
+           border-radius: 20px;
+           
+           display: flex;
+           flex-direction: column;
+           align-items: center;
+           gap: 30px;
+           padding: 20px;
+        }
+
+        .card img{
+            height: 57%;
+            border-radius: 10px;
+        }
+
+        .card h2{
+            font-weight: bold;
+            font-size: 1.5rem;
+        }
+
+        .card p{
+            font-size: 1.3rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+             <div class="card">
+               <img 
+                src="images/qrcode.png"
+               />
+
+               <h2>Improve your frontend skills buy developing projects</h2>
+               <p>
+                 Scan tne QR code to visit frontend member and take your coding skill so next level 
+               </p>
+            
+            </div>
+    </div>
+    
+</body>
+</html>
